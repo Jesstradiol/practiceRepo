@@ -17,7 +17,7 @@ const loadScript = (url, callback, type) => {
 };
 
 const getDefaultEmbed = (url) => `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
-    <iframe src="${url.href}" X-Frame-Options: DENY style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
+    <iframe src="${url.href}" X-Frame-Options: DENY; style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen=""
       scrolling="no" allow="encrypted-media" title="Content from ${url.hostname}" loading="lazy">
     </iframe>
   </div>`;
@@ -75,7 +75,7 @@ const embedGoogleMaps = (url) => {
   height="250"
   frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDuytUyexU-negEB6UitrO8o4vijCKl7Uc"
+  src="https://www.google.com/maps/d/embed/place?key=AIzaSyDuytUyexU-negEB6UitrO8o4vijCKl7Uc"
   allowfullscreen>
 </iframe>
 </div>`;
