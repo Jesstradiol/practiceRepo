@@ -68,6 +68,20 @@ const embedAdobe = (url) => {
   return embedHTML;
 };
 
+const embedGoogleMaps = (url) => {
+  const embedHTML =`<div>
+<iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDuytUyexU-negEB6UitrO8o4vijCKl7Uc"
+  allowfullscreen>
+</iframe>
+</div>`;
+  return embedHTML;
+};
+
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
     return;
@@ -89,6 +103,10 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['adobe'],
       embed: embedAdobe,
+    },
+    {
+      match: ['Google','Maps'],
+      embed: embedGoogleMaps,
     },
   ];
 
