@@ -75,7 +75,7 @@ const embedGoogleMaps = (url) => {
   height="250"
   frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDuytUyexU-negEB6UitrO8o4vijCKl7Uc"
+  src="https://www.google.com/maps/d/u/1/edit?mid=1fpBNo68AEvIGG_ZgxOmLiLZIByBVKiI&usp=sharing"
   allowfullscreen>
 </iframe>
 </div>`;
