@@ -73,7 +73,7 @@ const embedGoogleMaps = (url) => {
 <iframe
   width="450"
   height="250"
-  frameborder="0" style="border:0"
+  frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDuytUyexU-negEB6UitrO8o4vijCKl7Uc"
   allowfullscreen>
