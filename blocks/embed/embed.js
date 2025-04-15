@@ -117,11 +117,11 @@ const loadEmbed = (block, link, autoplay) => {
       embed: embedAdobe,
     },
     {
-      match: ['Google','maps'],
+      match: ['google','maps'],
       embed: embedGoogleMaps,
     },
     {
-      match: ['Google','calendar'],
+      match: ['google','calendar'],
       embed: embedGoogleCalendar,
     },
   
