@@ -124,7 +124,6 @@ const loadEmbed = (block, link, autoplay) => {
       match: ['google','calendar'],
       embed: embedGoogleCalendar,
     },
-  
   ];
 
   const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
