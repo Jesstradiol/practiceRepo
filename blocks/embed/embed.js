@@ -75,7 +75,7 @@ const embedGoogleMaps = (url) => {
   height="250"
   frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/d/u/1/edit?mid=1fpBNo68AEvIGG_ZgxOmLiLZIByBVKiI&usp=sharing"
+  src="https://www.google.com/maps/d/u/1/${suffix}"
   allowfullscreen>
 </iframe>
 </div>`;
