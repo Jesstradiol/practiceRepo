@@ -71,8 +71,6 @@
  const embedGoogleMaps = (url) => {
    const embedHTML =`<div>
  <iframe
-   width="450"
-   height="250"
    frameborder="0" style="border:0" X-Frame-Options: DENY;
    referrerpolicy="no-referrer-when-downgrade"
    src="https://www.google.com/maps/d/u/1/${suffix}"
@@ -84,7 +82,7 @@
  
  const embedGoogleCalendar = (url) => {
    const embedHTML =`<div>
- <iframe width="1000" height="700" frameborder="0" scrolling="no"
+ <iframe frameborder="0" scrolling="no"
    frameborder="0" style="border:0" X-Frame-Options: DENY;
    referrerpolicy="no-referrer-when-downgrade"
    src="https://calendar.google.com/calendar/${suffix}"
@@ -117,12 +115,10 @@
        embed: embedAdobe,
      },
      {
-       match: ['Google','maps'],
        match: ['google','maps'],
        embed: embedGoogleMaps,
      },
      {
-       match: ['Google','calendar'],
        match: ['google','calendar'],
        embed: embedGoogleCalendar,
      },
