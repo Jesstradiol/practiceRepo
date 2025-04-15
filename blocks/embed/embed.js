@@ -75,7 +75,19 @@ const embedGoogleMaps = (url) => {
   height="250"
   frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/d/u/1/edit?mid=1fpBNo68AEvIGG_ZgxOmLiLZIByBVKiI&usp=sharing"
+  src="https://www.google.com/maps/d/u/1/${suffix}"
+  allowfullscreen>
+</iframe>
+</div>`;
+  return embedHTML;
+};
+
+const embedGoogleCalendar = (url) => {
+  const embedHTML =`<div>
+<iframe width="1000" height="700" frameborder="0" scrolling="no"
+  frameborder="0" style="border:0" X-Frame-Options: DENY;
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://calendar.google.com/calendar/${suffix}"
   allowfullscreen>
 </iframe>
 </div>`;
@@ -105,9 +117,14 @@ const loadEmbed = (block, link, autoplay) => {
       embed: embedAdobe,
     },
     {
-      match: ['Google','Maps'],
+      match: ['google','maps'],
       embed: embedGoogleMaps,
     },
+    {
+      match: ['google','calendar'],
+      embed: embedGoogleCalendar,
+    },
+  
   ];
 
   const config = EMBEDS_CONFIG.find((e) => e.match.some((match) => link.includes(match)));
