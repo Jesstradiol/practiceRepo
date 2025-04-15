@@ -84,7 +84,7 @@ const embedGoogleMaps = (url) => {
 
 const embedGoogleCalendar = (url) => {
   const embedHTML =`<div>
-<iframe
+<iframe width="1000" height="700" frameborder="0" scrolling="no"
   frameborder="0" style="border:0" X-Frame-Options: DENY;
   referrerpolicy="no-referrer-when-downgrade"
   src="https://calendar.google.com/calendar/${suffix}"
